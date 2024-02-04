@@ -2,19 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
 
 body {
   color: rgb(var(--foreground-rgb));
@@ -24,4 +12,41 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+@font-face {
+  font-family: "Welcome";
+  src: url("../fonts/Welcomeweb-Medium.ttf");
+}
+
+.welcomeW{
+  font-family: "Welcome", sans-serif;
+}
+
+@font-face {
+  font-family: "Fabio";
+  src: url("../fonts/Fabioxmregular.ttf");
+}
+
+.fabio {
+  font-family: "Fabio", sans-serif;
+}
+
+@font-face {
+  font-family: "RothekRegular";
+  src: url("../fonts/RothekRegular.ttf");
+}
+
+.rothek {
+  font-family: "RothekRegular", sans-serif;
+  font-feature-settings: "ss09" on, "ss11" on, "ss08" on, "ss05" on, "ss07" on,
+    "ss02" on, "ss06" on, "ss10" on, "salt" on;
+}
+
+html{
+  background-color: #EEC64B;
+}
+
+h1{
+  background-color: transparent;
 }
